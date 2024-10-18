@@ -416,7 +416,9 @@ class MaestroApi():
         
 
 if __name__ == "__main__":
-    
+
+
+    # this information will available in developer enviroment in botcity maestro orchestrator
     data = {"login":"", "key":""}
     
     maestro = MaestroApi(data["login"],data["key"])
@@ -431,6 +433,6 @@ if __name__ == "__main__":
     #print(maestro.delete_task(4135503))
     #print(maestro.get_automation_list())
     #print(maestro.get_automation("testelabel"))
-    print(maestro.get_runner_log("workstation"))
+    #print(maestro.get_runner_log())
 
 
